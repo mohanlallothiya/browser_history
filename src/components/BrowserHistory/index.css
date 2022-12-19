@@ -1,0 +1,83 @@
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbarCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  padding: 10px;
+  background-color: #3367d6;
+}
+.mainLogo {
+  height: 20px;
+}
+.searchInputCon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+  background-color: #2850a7;
+}
+.searchInputEl {
+  padding-left: 10px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+::placeholder {
+  color: #bfbfbf;
+  font-size: 14px;
+}
+.searchInputEl:focus {
+  outline: none;
+}
+.searchImg {
+  padding: 5px;
+  border-right: 1px solid #ececec;
+}
+.historyListCon {
+  width: 90vw;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+}
+.noHistoryCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+.noHistory {
+  font-size: 24px;
+  color: #475569;
+}
+@media (min-width: 768px) {
+  .navbarCon {
+    justify-content: space-around;
+    height: 90px;
+    padding: 10px;
+  }
+  .mainLogo {
+    height: 30px;
+  }
+  .searchInputEl {
+    width: 35vw;
+    height: 40px;
+  }
+  .searchImg {
+    height: 45px;
+    padding: 10px;
+    border-right: 1px solid #ececec;
+  }
+  .historyListCon {
+    width: 75vw;
+  }
+}

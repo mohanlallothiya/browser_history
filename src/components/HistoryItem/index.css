@@ -1,0 +1,87 @@
+li {
+  list-style: none;
+}
+.listMain {
+  display: flex;
+  flex-direction: column;
+}
+.urlMainCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.urlCon {
+  display: flex;
+  flex-direction: row;
+}
+.titleCon {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.time {
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+  color: #475569;
+}
+.domainUrl {
+  margin: 0px;
+  color: #64748b;
+}
+.domainLogo {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+.deleteImg {
+  width: 25px;
+  height: 25px;
+}
+.btn {
+  align-self: flex-start;
+  border: none;
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .listMain {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 72vw;
+    margin: 30px 5px;
+  }
+  .urlMainCon {
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 65vw;
+  }
+  .titleCon {
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+    margin-left: 0px;
+  }
+  .time {
+    width: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .domainLogo {
+    margin-top: 0px;
+  }
+  .title,
+  .domainUrl {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  .btn {
+    align-self: flex-end;
+  }
+}
